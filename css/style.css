@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #09A494;
+    --text: #212121;
+    --bg: #FFFFFF;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h2 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h3 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+button {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+a {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.subtitle {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--blue);
+    background-color: var(--bg);
+}
+
+footer {
+    color: var(--bg);
+    background-color: var(--text);
+}
+
+.main-nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    color: var(--blue);
+}
+
+.main-nav a:hover{
+    color: blue;
+}
+
+button {
+    cursor: pointer;
+
+    padding: 6px 10px 10px 10px;
+    text-transform: lowercase;
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background-color: var(--bg);
+}
+
+button:hover {
+    color: blue;
+}
+
+.social {
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+	gap: 40px;
+	line-height: 100%;
+}
+
+.social a {
+    background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+	padding: 5px 0 5px 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-mail {
+    background-image: url("../img/icon=email.svg");
+}
+
+.social-tel {
+    background-image: url("../img/icon=phone.svg");
+}
+
+.social-link {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.social-link li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--text);
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.social-link li a{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--text);
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-link_vk {
+    background-image: url("../img/social=vk.svg");
+}
+
+.social-link_tg {
+    background-image: url("../img/social=telegram.svg");
+}
+
+.social-link_github {
+    background-image: url("../img/social=github.svg");
+}
+
+
+
+.social-link li a:hover {
+    background-color: var(--blue);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.user-photo {
+    border-radius: 50%;
+}
+
+.skills {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 30px 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--text);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+
+.skill-list dt {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../img/skill=html.svg");
+}
+
+
+.skill-item_css {
+    background-image: url("../img/skill=css.svg");
+}
+
+
+.skill-item_cpp {
+    background-image: url("../img/skill=c++.svg");
+}
+
+
+.skill-item_java {
+    background-image: url("../img/skill=java.svg");
+}
+
+.skill-item_eng {
+    background-image: url("../img/skill=english.svg");
+}
+
+.skill-item_js {
+    background-image: url("../img/skill=javascript.svg");
+}
+
+.skill-item_node {
+    background-image: url("../img/skill=nodejs.svg");
+}
