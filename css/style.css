@@ -177,7 +177,6 @@ button:hover {
 .social-link li{
     width: 50px;
     height: 50px;
-    border: 1px solid var(--text);
     border-radius: 50px;
     display: inline-block;
     margin: 0;
@@ -187,13 +186,14 @@ button:hover {
 .social-link li a{
     width: 50px;
     height: 50px;
-    border: 1px solid var(--text);
+    outline: 1px solid var(--blue);
     border-radius: 50px;
     display: inline-block;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .social-link_vk {
@@ -353,7 +353,7 @@ p + p {
 	display: none;
 }
 
-.left_photo {
+.left-photo {
 	display: none;
 }
 
@@ -446,7 +446,7 @@ p + p {
 		height: 30px;
 	}
 
-	.nav-btn_close {
+	.nav-btn-close {
 		background-image: url('../img/close.svg');
 	}
 
@@ -469,16 +469,16 @@ p + p {
 		justify-content: space-between;
 	}
 
-	.user_photo {
+	.user-photo {
 		width: 150px;
 		height: 150px;
 	}
 
-	.right_photo {
+	.right-photo {
 		display: none;
 	}
 
-	.left_photo {
+	.left-photo {
 		display: block;
 	}
 
@@ -524,7 +524,7 @@ p + p {
 		padding: 8px 0 8px 42px;
 	}
 
-	.main_footer {
+	.main-footer {
 		padding: 30px 20px;
 	} 
 }
