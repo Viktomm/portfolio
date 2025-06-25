@@ -139,7 +139,7 @@ button:hover {
 }
 
 .social {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 0;
     list-style-type: none;
     display: flex;
@@ -169,6 +169,7 @@ button:hover {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 
@@ -407,9 +408,11 @@ p + p {
 	}
 	h1 {
 		font-size: 32px;
+        margin-bottom: 10px;
 	}
 
 	h2 {
+        margin-bottom: 30px;
 		font-size: 20px;
 	}
 
@@ -432,6 +435,7 @@ p + p {
 
 	.main-header {
 		padding-top: 20px;
+        margin-bottom: 50px;
 		gap: 20px;
         flex-direction: column;
 	}
@@ -513,8 +517,9 @@ p + p {
 		gap: 30px;
 	}
 
-	.socials {
+	.social {
 		margin-top: -10px;
+        margin-bottom: 20px;
 	}
 
 	.social a {
