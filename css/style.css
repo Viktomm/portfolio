@@ -82,7 +82,6 @@ h3 {
 button {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--text);
@@ -92,7 +91,6 @@ button {
 a {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--text);
@@ -415,7 +413,15 @@ p + p {
 		font-size: 20px;
 	}
 
+    .subtitle {
+		font-size: 20px;
+	}
+
 	body {
+		font-size: 14px;
+	}
+
+    .main-header {
 		font-size: 14px;
 	}
 
@@ -430,8 +436,9 @@ p + p {
         flex-direction: column;
 	}
 
-	nav {
+	.main-header nav {
 		flex-direction: column;
+        gap: 0px;
 	}
 
 	nav a {
@@ -480,16 +487,6 @@ p + p {
 
 	.left-photo {
 		display: block;
-	}
-
-	.name {
-		line-height: 110%;
-		gap: 10px;
-	}
-
-	.name span {
-		font-size: 20px;
-		text-align: center;
 	}
 
 	section {
