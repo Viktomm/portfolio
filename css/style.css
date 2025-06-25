@@ -34,6 +34,10 @@ section {
     gap: 40px;
 }
 
+.main-header nav a:hover{
+    color: var(--blue);
+}
+
 
 body {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -95,6 +99,7 @@ a {
     letter-spacing: 0%;
     color: var(--text);
     background-color: var(--bg);
+    text-decoration: none;
 }
 
 .subtitle {
@@ -120,7 +125,7 @@ footer {
 }
 
 .main-nav a:hover{
-    color: blue;
+    color: var(--bg);
 }
 
 button {
@@ -136,6 +141,7 @@ button {
 
 button:hover {
     color: blue;
+    background-color: var(--blue);
 }
 
 .social {
@@ -157,6 +163,10 @@ button:hover {
 	align-items: center;
 }
 
+.social a:hover {
+    color: var(--blue);
+}
+
 .social-mail {
     background-image: url("../img/icon=email.svg");
 }
@@ -170,6 +180,8 @@ button:hover {
     padding: 0;
     list-style-type: none;
     display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -352,6 +364,12 @@ p + p {
 	display: none;
 }
 
+.nav-btn-close {
+	display: none;
+    border: none;
+    border-radius: 0;
+}
+
 .left-photo {
 	display: none;
 }
@@ -384,10 +402,6 @@ p + p {
 
 	section {
 		margin-bottom: 80px;
-	}
-
-	.main-footer {
-		margin-top: 80px;
 	}
 
 	.container {
@@ -497,10 +511,6 @@ p + p {
 		margin-bottom: 50px;
 	}
 
-	.main-footer {
-		/* margin-top: 50px; */
-	}
-
 	#about {
 		gap: 30px;
 	}
@@ -518,7 +528,6 @@ p + p {
 	}
 
 	.social {
-		margin-top: -10px;
         margin-bottom: 20px;
 	}
 
