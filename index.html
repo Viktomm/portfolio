@@ -14,33 +14,41 @@
 <body>
     <div class="container">
         <header class="main-header">
-            <img src="./img/main-logo.svg" alt="Основное лого" width="60" height="60">
-            <nav class="main-nav">
-                <a href="#about">Обо мне</a>
-                <a href="#skills">Навыки</a>
-                <a href="#interests">Интересы</a>
-                <a href="#contacts">Контакты</a>
-            </nav>
+            <div class="main-header-wrap">
+				<div class="main_logo"><img src="./img/main-logo.svg" class="main-logo" alt="Основное лого" width="60" height="60"></div>
+				<button class="nav-btn nav-btn_close"><span class="visually-hidden">Закрыть меню</span></button>
+			</div>
+			<nav >
+				<a href="#about">Обо мне</a>
+				<a href="#skills">Навыки</a>
+				<a href="#interests">Интересы</a>
+				<a href="#contacts">Контакты</a>
+			</nav>
         </header>
         <main>
-            <section>
-                <h1>Виктор Мелихов</h1>
-                <p class="subtitle">Backend Java разработчик</p>
-                <img class="user-photo" src="./img/user-photo.jpg" alt="Фотография какого-то парня" width="400" height="400">
+            <section class="intro">
+                <img class="user-photo left_photo" src="./img/user-photo.jpg" alt="Фотография какого-то парня" width="400" height="400">
+                <div class="intro-div">
+                    <h1>Виктор Мелихов</h1>
+                    <p class="subtitle">Backend Java разработчик</p>
+                </div>
+                <img class="user-photo right_photo" src="./img/user-photo.jpg" alt="Фотография какого-то парня" width="400" height="400">
             </section>
             <section id="about">
                 <h2>Обо мне</h2>
-                <p>Привет ✌</p>
+                <div class="wrapped-text">
+                    <p>Привет ✌</p>
 
-                <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычисли­тельная техника».</p>
-                
-                <p>В прошлом году получил красный диплом бакалавра.</p>
-                
-                <p>Работаю в компании "КРОК" backend разработчиком на Java</p>
+                    <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычисли­тельная техника».</p>
+                    
+                    <p>В прошлом году получил красный диплом бакалавра.</p>
+                    
+                    <p>Работаю в компании "КРОК" backend разработчиком на Java</p>
+                </div>
             </section>
             <section id="skills">
-                <div>
-                    <h2>Мои навыки</h2>
+                <div class="skills-div">
+                    <h2 class="skills-no-margin">Мои навыки</h2>
                     <div class="sort-options">
                         <span>Сортировать:</span>
                         <button type="button">по названию</button>
@@ -89,8 +97,10 @@
 
             <section id="interests">
                 <h2>Мои интересы</h2>
-                <p>Наибольший интерес для меня в данный момент представляет программирование.</p>
-                <p>Но помимо учёбы и работы я также люблю играть в компьютерные игры и читать разного рода философские труды.</p>
+                <div class="wrapped-text">
+                    <p>Наибольший интерес для меня в данный момент представляет программирование.</p>
+                    <p>Но помимо учёбы и работы я также люблю играть в компьютерные игры и читать разного рода философские труды.</p>
+                </div>
             </section>
 
             <section id="contacts">
@@ -119,7 +129,7 @@
     </div>
 
     <footer class="main-footer">
-        <div class="container">
+        <div class="container footer-text">
             <p>© 2025 Виктор Мелихов</p>
         </div>
     </footer>

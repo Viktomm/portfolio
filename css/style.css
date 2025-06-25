@@ -17,6 +17,24 @@
     padding: 0 20px;
 }
 
+section {
+    margin-bottom: 120px;
+}
+
+.main-header {
+    display: flex;
+    padding-top: 60px;
+    margin-bottom: 120px;
+    gap: 40px;
+    align-items: center;
+}
+
+.main-header nav {
+    display: flex;
+    gap: 40px;
+}
+
+
 body {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
@@ -35,6 +53,8 @@ h1 {
     letter-spacing: 0%;
     color: var(--text);
     background-color: var(--bg);
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -45,6 +65,8 @@ h2 {
     letter-spacing: 0%;
     color: var(--text);
     background-color: var(--bg);
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -207,13 +229,9 @@ button:hover {
 
 .user-photo {
     border-radius: 50%;
+    object-fit: cover;
 }
 
-.skills {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
 
 
 .skill-list dt {
@@ -275,4 +293,273 @@ button:hover {
 
 .skill-item_node {
     background-image: url("../img/skill=nodejs.svg");
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.wrapped-text {
+    max-width: 800px;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+#skills {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 20px;
+}
+
+
+.skills-div {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sort-options {
+    display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+}
+
+#about {
+    margin-bottom: 120px;
+}
+
+.footer-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skills-no-margin {
+    margin: 0;
+}
+
+.nav-btn {
+	display: none;
+}
+
+.left_photo {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {   
+	.skills-div {
+		gap: 40px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	body {
+		font-size: 16px;
+	}
+
+	.user-photo {
+		width: 250px;
+		height: 250px;
+	}
+
+	.subtitle {
+		font-size: 28px;
+	}
+
+	section {
+		margin-bottom: 80px;
+	}
+
+	.main-footer {
+		margin-top: 80px;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 650px) {   
+	.footer-text {
+		padding: 0;
+	}
+	.social-link {
+		gap: 15px;
+	}
+	#interests {
+		gap: 30px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	.main-logo {
+		width: 40px;
+		height: 40px;
+	}
+
+	.main-header {
+		padding-top: 20px;
+		gap: 20px;
+        flex-direction: column;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	nav a {
+		padding: 20px 30px;
+		text-align: center;
+		line-height: 100%;
+	}
+
+	.nav-btn {
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+
+	.nav-btn_close {
+		background-image: url('../img/close.svg');
+	}
+
+	.intro {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+    .intro-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+	.main-header-wrap {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.user_photo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.right_photo {
+		display: none;
+	}
+
+	.left_photo {
+		display: block;
+	}
+
+	.name {
+		line-height: 110%;
+		gap: 10px;
+	}
+
+	.name span {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+
+	.main-footer {
+		/* margin-top: 50px; */
+	}
+
+	#about {
+		gap: 30px;
+	}
+
+	#skills {
+		gap: 10px;
+	}
+
+	#skills .skills-div {
+		gap: 30px;
+	}
+
+	#contacts {
+		gap: 30px;
+	}
+
+	.socials {
+		margin-top: -10px;
+	}
+
+	.social a {
+		padding: 8px 0 8px 42px;
+	}
+
+	.main_footer {
+		padding: 30px 20px;
+	} 
+}
+
+@media screen and (max-width: 380px) {
+
+	#skills .skills-div {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	#skills .skills-div .sort-options {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	#skills .skills-div button {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.social {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.social a {
+		justify-content: flex-start;
+	}
+
+	.socials {
+		flex-wrap: wrap;
+	}
 }
