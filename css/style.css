@@ -273,38 +273,6 @@ button:hover {
     text-transform: lowercase;
 }
 
-
-.skill-item_html {
-    background-image: url("../img/skill=html.svg");
-}
-
-
-.skill-item_css {
-    background-image: url("../img/skill=css.svg");
-}
-
-
-.skill-item_cpp {
-    background-image: url("../img/skill=c++.svg");
-}
-
-
-.skill-item_java {
-    background-image: url("../img/skill=java.svg");
-}
-
-.skill-item_eng {
-    background-image: url("../img/skill=english.svg");
-}
-
-.skill-item_js {
-    background-image: url("../img/skill=javascript.svg");
-}
-
-.skill-item_node {
-    background-image: url("../img/skill=nodejs.svg");
-}
-
 .intro {
     width: 100%;
     display: flex;
