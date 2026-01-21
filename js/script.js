@@ -58,6 +58,35 @@ buttonsBlock.addEventListener('click', (e) => {
     }
 });
 
+const nav = document.querySelector('nav');
+const menuSwitcher = document.querySelector('.nav-btn');
+const menuSwitcherText = document.querySelector('.nav-btn .visually-hidden')
+const menu = {
+    close() {
+        nav.classList.add('nav-closed');
+        menuSwitcher.classList.remove('nav-btn-close');
+        menuSwitcher.classList.add('nav-btn-open');
+        menuSwitcherText.textContent = 'Открыть меню';
+    },
+    open() {
+        nav.classList.remove('nav-closed');
+        menuSwitcher.classList.remove('nav-btn-open');
+        menuSwitcher.classList.add('nav-btn-close');
+        menuSwitcherText.textContent = 'Закрыть меню';
+    }
+};
+
+menu.close();
+
+
+menuSwitcher.addEventListener('click', (e) => {
+    if (e.target.classList.contains('nav-btn-open')) {
+        menu.open();
+    } else {
+        menu.close();
+    }
+});
+
 function compare(a, b) {
     if (a.name < b.name) {
         return -1;

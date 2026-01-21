@@ -337,6 +337,12 @@ p + p {
     border-radius: 0;
 }
 
+.nav-btn-open {
+	display: none;
+    border: none;
+    border-radius: 0;
+}
+
 .left-photo {
 	display: none;
 }
@@ -409,6 +415,10 @@ p + p {
 		font-size: 14px;
 	}
 
+    .main-header nav.nav-closed {
+		display: none;
+	}
+
 	.main-logo {
 		width: 40px;
 		height: 40px;
@@ -440,6 +450,10 @@ p + p {
 
 	.nav-btn-close {
 		background-image: url('../img/close.svg');
+	}
+
+    .nav-btn-open {
+		background-image: url('../img/menu.svg');
 	}
 
 	.intro {
