@@ -5,7 +5,7 @@
 }
 
 :root {
-    --blue: #09A494;
+    --green: #09A494;
     --text: #212121;
     --bg: #FFFFFF;
     --footer-bg: #212121;
@@ -21,6 +21,15 @@ section {
     margin-bottom: 120px;
 }
 
+.nav-btn button{
+    background-color: transparent;
+}
+
+.nav-btn button:hover {
+    background-color: transparent;
+}
+
+
 .main-header {
     display: flex;
     padding-top: 60px;
@@ -35,7 +44,7 @@ section {
 }
 
 .main-header nav a:hover{
-    color: var(--blue);
+    color: var(--green);
 }
 
 
@@ -108,7 +117,7 @@ a {
     font-size: 38px;
     line-height: 120%;
     letter-spacing: 0%;
-    color: var(--blue);
+    color: var(--green);
     background-color: var(--bg);
 }
 
@@ -121,7 +130,7 @@ footer {
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px 10px 15px;
-    color: var(--blue);
+    color: var(--green);
 }
 
 .main-nav a:hover{
@@ -134,14 +143,14 @@ button {
     padding: 6px 10px 10px 10px;
     text-transform: lowercase;
     border-radius: 8px;
-    border: 1px solid var(--blue);
-    color: var(--blue);
+    border: 1px solid var(--green);
+    color: var(--green);
     background-color: var(--bg);
 }
 
 button:hover {
-    color: blue;
-    background-color: var(--blue);
+    color: var(--text);
+    background-color: var(--green);
 }
 
 .social {
@@ -164,7 +173,7 @@ button:hover {
 }
 
 .social a:hover {
-    color: var(--blue);
+    color: var(--green);
 }
 
 .social-mail {
@@ -205,7 +214,7 @@ button:hover {
 .social-link li a{
     width: 50px;
     height: 50px;
-    outline: 1px solid var(--blue);
+    outline: 1px solid var(--green);
     border-radius: 50px;
     display: inline-block;
     margin: 0;
@@ -230,7 +239,7 @@ button:hover {
 
 
 .social-link li a:hover {
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 .visually-hidden {
@@ -246,12 +255,14 @@ button:hover {
     overflow: hidden;
 }
 
+.hidden-button {
+    visibility: hidden;
+}
+
 .user-photo {
     border-radius: 50%;
     object-fit: cover;
 }
-
-
 
 .skill-list dt {
     margin-bottom: 6px;
@@ -273,7 +284,7 @@ button:hover {
 
 .skill-level div {
     height: 14px;
-    background-color: var(--blue);
+    background-color: var(--green);
     border-radius: 8px;
 }
 
@@ -338,6 +349,8 @@ p + p {
 
 .nav-btn {
 	display: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .nav-btn-close {
@@ -359,7 +372,7 @@ p + p {
 .dark-theme {
 	--text: #CCCCCC;
 	--bg: #031923;
-    --footer-bg: var(--blue);
+    --footer-bg: var(--green);
 }
 
 .dark-theme .social-link{
@@ -626,4 +639,21 @@ p + p {
 	.socials {
 		flex-wrap: wrap;
 	}
+}
+
+.main-header .main-header-wrap .nav-btn:hover,
+.main-header .main-header-wrap .nav-btn.nav-btn-close:hover,
+.main-header .main-header-wrap .nav-btn.nav-btn-open:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 650px) {
+    .main-header .main-header-wrap .nav-btn:hover,
+    .main-header .main-header-wrap button.nav-btn:hover,
+    .main-header .main-header-wrap .nav-btn-close:hover,
+    .main-header .main-header-wrap .nav-btn-open:hover {
+        background-color: transparent;
+        box-shadow: none;
+    }
 }

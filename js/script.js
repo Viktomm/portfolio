@@ -6,6 +6,9 @@ const skills = {
     async generateList(parentElement, path = null) {
         parentElement.innerHTML = '';
         if (this.data.length > 0) {
+            buttonsBlock.classList.remove('hidden-button');
+            const dl = document.createElement('dl');
+            
             this.data.forEach(element => {
                 let dt = document.createElement('dt');
                 let dd = document.createElement('dd');
@@ -18,11 +21,14 @@ const skills = {
                 dt.textContent = element.name;
 
                 dd.appendChild(div);
-                skillList.appendChild(dt);
-                skillList.appendChild(dd);
+                dl.appendChild(dt);
+                dl.appendChild(dd);
             });
+
+            parentElement.appendChild(dl);
         } else {
             parentElement.textContent = this.errorMessage;
+            buttonsBlock.classList.add('hidden-button');
 
             const buttonReGenerateList = document.createElement('button');
             buttonReGenerateList.textContent = "Обновить";
@@ -30,15 +36,6 @@ const skills = {
             buttonReGenerateList.addEventListener('click', () => {
                 this.setData(path).then(
                     (path) => this.generateList(parentElement, path)
-                ).then(
-                    () => {
-                        if (parentElement.textContent == (this.errorMessage + 'Обновить')) {
-                            buttonsBlock.style.display = "None";
-                        }
-                        else {
-                            buttonsBlock.style.display = "flex";
-                        }
-                    }
                 );
                 console.log(`Попытка повторного получения '${path}'... `);
             });
@@ -67,14 +64,7 @@ const skills = {
 const skillList = document.querySelector('.skill-list');
 skills.setData('db/skills.json')
     .then(
-        (path) => skills.generateList(skillList, path))
-    .then(
-        () => {
-            if (skillList.textContent == (skills.errorMessage + 'Обновить')) {
-                buttonsBlock.style.display = "None";
-            }
-        }
-    );
+        (path) => skills.generateList(skillList, path));
 
 const buttonsBlock = document.querySelector('.sort-options');
 buttonsBlock.addEventListener('click', (e) => {
@@ -149,18 +139,6 @@ function applyTheme() {
 window.onload = () => {
   applyTheme();
 };
-
-function compare(a, b) {
-    if (a.name < b.name) {
-        return -1;
-    }
-
-    if (a.name > b.name) {
-        return 1;
-    }
-
-    return 0;
-}
 
 function getComparer(prop) {
     return function (a, b) {
