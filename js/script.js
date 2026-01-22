@@ -65,7 +65,7 @@ const skills = {
 }
 
 const skillList = document.querySelector('.skill-list');
-skills.setData('../db/skills.json')
+skills.setData('db/skills.json')
     .then(
         (path) => skills.generateList(skillList, path))
     .then(
