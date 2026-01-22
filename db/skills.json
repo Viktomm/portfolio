@@ -1,0 +1,9 @@
+[
+{"name": "java", "range": 90, "icon": "java"},
+{"name": "node", "range": 60, "icon": "nodejs"},
+{"name": "js", "range": 50, "icon": "javascript"},
+{"name": "cpp", "range": 60, "icon": "c++"},
+{"name": "html", "range": 40, "icon": "html"},
+{"name": "css", "range": 40, "icon": "css"},
+{"name": "eng", "range": 70, "icon": "english"}
+]
